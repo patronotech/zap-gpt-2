@@ -84,7 +84,7 @@ const commands = async (client, message) => {
       const question = message.text.substring(message.text.indexOf(" "));
       try {
         const response = await getDavinciResponse(question)
-        const responseText = `Texto gerado pela IA GPT-3 🤖\n\nSolicitado por: ${message.sender?.pushname}\n\nTexto da pergunta: ${question}\n\nTexto da resposta: ${response}`;
+        const responseText = `Texto gerado pela RCL IA 🤖\n\nSolicitado por: ${message.sender?.pushname}\n\nTexto da pergunta: ${question}\n\nTexto da resposta: ${response}`;
         client.sendText(messageTo, responseText);
       } catch (err) {
         // catch
@@ -110,7 +110,7 @@ const commands = async (client, message) => {
           messageTo,
           imgUrl,
           imgDescription,
-          `Imagem gerada pela IA DALL-E 🤖\n\nSolicitado por: ${message.sender?.pushname}\n\nTexto da descrição: ${imgDescription}`
+          `Imagem gerada pela RCL IA 🤖\n\nSolicitado por: ${message.sender?.pushname}\n\nTexto da descrição: ${imgDescription}`
         );
       } catch (err) {
         client.sendText(messageTo, '❌ Sua solicitação foi rejeitada, por conta de palavras impróprias ou ofensivas.');
@@ -227,8 +227,8 @@ async function generateBufferImage({ base64, sizeImg, client, message, messageTo
         await client.sendImage(
           messageTo,
           r.data.data[0].url,
-          'Imagem gerada pela IA OpenAI',
-          `Imagem gerada pela IA OpenAI 🤖\n\nSolicitado por: ${message.sender?.pushname}`
+          'Imagem gerada por RCL IA',
+          `Imagem gerada por RCL IA 🤖\n\nSolicitado por: ${message.sender?.pushname}`
         );
       } catch (e) {
         client.sendText(messageTo, '❌ Erro ao gerar a imagem, verifique se o link está correto.');
