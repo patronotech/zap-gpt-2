@@ -57,7 +57,7 @@ $ npm start
   - Com uma URL. Por exemplo.:
     > */stickerbot https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pound_layer_cake.jpg/800px-Pound_layer_cake.jpg*
   - Com palavras-chave. Por exemplo.:
-    > */stickerbot choco cake*
+    > */stickerbot bolo de chocolate*
 - **/imgvarbot**
   - O comando acima funciona como o comando _/stickerbot_ e irá gerar uma nova variante da imagem. Ex.: (com url):
     > */imgvarbot https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pound_layer_cake.jpg/800px-Pound_layer_cake.jpg*
