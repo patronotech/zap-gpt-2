@@ -1,70 +1,67 @@
 # ZAP-GPT
 
-### Clone the project
-Clone this project with the code below:
+### Clonar o projeto
+Clone este projeto com o código abaixo:
 
 ```bash
-$ git clone https://github.com/VictorMonteiro7/zap-gpt.git
+$ git clone https://github.com/patronotech/zap-gpt-2.git
 ```
 --- 
 
-### What do you will need?
+### O que você vai precisar?
 
 > Open-AI API Key
-- Click on [this link](https://beta.openai.com/account/api-keys), and click in `Create new secret key` button  
+- Click em [this link](https://beta.openai.com/account/api-keys), e no botão `Create new secret key`
 
 > Organization ID (Open-AI)
-- Click on [this link](https://beta.openai.com/account/org-settings), select your organization and get the Organization ID.
+- Click em [this link](https://beta.openai.com/account/org-settings), selecione sua organização e obtenha o Organization ID.
 
 > Tenor API Key  
-- Follow the instructions to generate a [TENOR API KEY here](https://developers.google.com/tenor/guides/quickstart)
+- Siga as instruções para gerar uma [TENOR API KEY here](https://developers.google.com/tenor/guides/quickstart)
 
-Copy the `env.local` file to the root folder, and rename it to `.env`.
+Copie o arquivo `env.local` para a pasta raiz e renomeie-o para `.env`.
 
 ```bash
 $ cp <PATH>/.env.local .env 
 ```
-After this, put the KEY, Organization ID, your tel number and the TENOR API KEY on the variables. 
+Depois disso, coloque a KEY, Organization ID, seu número de telefone e a TENOR API KEY nas variáveis.
 
 ---  
-### How to run the project?
+### Como executar o projeto?
 
-First of all, make a `npm install` to install all the dependencies. 
+Primeiro de tudo, faça um `npm install` para instalar todas as dependências.
 
 ```bash
 $ cd <PATH> && npm install
 ```
-After this, run the project with `npm start`
+Depois disso, execute o projeto com `npm start`
 
 ```bash
 $ npm start
 ```
 ---
 
-### Features
+### Recursos
 
 - **/chatbot \<text\>**
-  - Use the above command to ask something, and the bot will return a reply. E.g.:
-    > */chatbot How do I make a cake?*
+  - Use o comando acima para perguntar algo e o bot retornará uma resposta. Por exemplo.:
+    > */chatbot Como faço um bolo?*
 - **/imgbot \<description\>**
-  - Use the above command to generate a DALL-E image. E.g.:
-    > */imgbot generate a cake image*
+  - Use o comando acima para gerar uma imagem DALL-E. Por exemplo.:
+    > */imgbot gerar imagem de um bolo*
 - **/stickerbot**
-  - The above command work in two ways:
-    - With a image in whatsapp and with only the command as a description. E.g.: 
+  - O Comando acima funciona de duas maneiras:
+    - Com uma imagem no whatsapp e apenas com o comando como descrição. Por exemplo.: 
     > (image)  
     > */stickerbot*
-  - With a URL. E.g.:
+  - Com uma URL. Por exemplo.:
     > */stickerbot https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pound_layer_cake.jpg/800px-Pound_layer_cake.jpg*
-  - With key words. E.g.:
+  - Com palavras-chave. Por exemplo.:
     > */stickerbot choco cake*
 - **/imgvarbot**
-  - The above command works like the _/stickerbot_ command, and will generate a new variant of the image. E.g (w/ url): 
+  - O comando acima funciona como o comando _/stickerbot_ e irá gerar uma nova variante da imagem. Ex.: (com url):
     > */imgvarbot https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pound_layer_cake.jpg/800px-Pound_layer_cake.jpg*
 
 ---
 
-# DO NOT USE THIS BOT TO ASK WRONG THINGS!
-
-You can check the origin guide into this link
-[Origin guide](https://www.tabnews.com.br/victorharry/guia-completo-de-como-integrar-o-chat-gpt-com-whatsapp)
+# NÃO USE ESTE BOT PARA PERGUNTAR COISAS ERRADAS!
